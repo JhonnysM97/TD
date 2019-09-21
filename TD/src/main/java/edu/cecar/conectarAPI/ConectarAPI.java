@@ -152,8 +152,8 @@ public class ConectarAPI {
 					String photoThumbnailUrl= jSONCharacter.getJSONObject(i).get("thumbnail").toString();
 					System.out.println(photoUrl);
 					
-				//	descargarPhoto("Photo_Url/"+id,new URL(photoUrl));
-					//descargarPhoto("Photo_Thumbnail_Url/"+id,new URL(photoThumbnailUrl));
+					descargarPhoto("Photo_Url/"+id,new URL(photoUrl));
+					descargarPhoto("Photo_Thumbnail_Url/"+id,new URL(photoThumbnailUrl));
 					
 					photos.put(id, new Photo(id, albumID, title, photoUrl, photoThumbnailUrl));
 					
